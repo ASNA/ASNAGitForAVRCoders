@@ -1,0 +1,33 @@
+[user]
+    name = Roger Pence
+    email = roger.pence@gmail.com
+[alias]
+    # Git add and commit -- with given message.   
+    cm = !git add -A && git commit -m
+
+    # Git add and commit -- and prompt for message. 	
+    cml = !git add -A && git commit  	
+
+    # Git streamlined log.
+    act = log --pretty=format:\"%h %ad %s\" -n 10
+
+    # Show current commit.
+    scc = log -1 --format='Current commit: %h - %s'
+
+    # Change current commit. git mh xxxxxx
+    # mh = !git reset --hard
+
+    # Phil Haack's ignore current changes (but save them as 'WIPE SAVEPOINT' commit) alias.
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+    
+    # Discard unstaged changes. 
+    zap-unstaged = reset HEAD --hard
+    
+    # To undo a specific unstaged file change: 
+    # git checkout <filename>
+[core]
+    autocrlf = true
+    editor = notepad
+    # excludesfile = C:\\Users\\roger\\Documents\\gitignore_global.txt
+[difftool "sourcetree"]
+    cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' \"$LOCAL\" \"$REMOTE\"

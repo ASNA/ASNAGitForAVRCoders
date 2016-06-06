@@ -1,0 +1,28 @@
+## Basic Visual Studio ignore file. 
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.pdb
+*.exe
+*.vs
+# Omit any file that starts with ASNA. This is typically used to exclude 
+# ASNA runtime DLLs--which typically don't need to be in source control. 
+ASNA*
+
+# Omit these folders and their contents.
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Oo]bj/
+[Ll]og/
+
+# Uncomment if you don't want anything from Debug or Bin 
+# included in repo.
+#[Dd]ebug/
+#[Bb]in/

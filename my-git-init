@@ -1,0 +1,2 @@
+cp /c/users/roger/bin/.gitignore . 
+git init
