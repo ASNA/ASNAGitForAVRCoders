@@ -1,6 +1,6 @@
-[user]
-    name = Roger Pence
-    email = roger.pence@gmail.com
+[user]      
+    name = <your name>
+    email = <your email address>
 [alias]
     # Git add and commit -- with given message.   
     cm = !git add -A && git commit -m
@@ -13,9 +13,6 @@
 
     # Show current commit.
     scc = log -1 --format='Current commit: %h - %s'
-
-    # Change current commit. git mh xxxxxx
-    # mh = !git reset --hard
 
     # Phil Haack's ignore current changes (but save them as 'WIPE SAVEPOINT' commit) alias.
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
